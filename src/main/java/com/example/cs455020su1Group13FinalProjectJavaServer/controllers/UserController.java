@@ -1,7 +1,7 @@
-package com.example.cs455020su1jannunziserverjava.controllers;
+package com.example.cs455020su1Group13FinalProjectJavaServer.controllers;
 
-import com.example.cs455020su1jannunziserverjava.models.User;
-import com.example.cs455020su1jannunziserverjava.services.UserService;
+import com.example.cs455020su1Group13FinalProjectJavaServer.models.User;
+import com.example.cs455020su1Group13FinalProjectJavaServer.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
