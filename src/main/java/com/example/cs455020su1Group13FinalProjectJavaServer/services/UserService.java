@@ -1,7 +1,7 @@
-package com.example.cs455020su1jannunziserverjava.services;
+package com.example.cs455020su1Group13FinalProjectJavaServer.services;
 
-import com.example.cs455020su1jannunziserverjava.models.User;
-import com.example.cs455020su1jannunziserverjava.repositories.UserRepository;
+import com.example.cs455020su1Group13FinalProjectJavaServer.models.User;
+import com.example.cs455020su1Group13FinalProjectJavaServer.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.example.cs455020su1jannunziserverjava.repositories;
+package com.example.cs455020su1Group13FinalProjectJavaServer.repositories;
 
-import com.example.cs455020su1jannunziserverjava.models.User;
+import com.example.cs455020su1Group13FinalProjectJavaServer.models.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
