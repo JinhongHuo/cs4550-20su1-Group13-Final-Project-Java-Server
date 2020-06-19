@@ -31,13 +31,13 @@ public class CommentController {
 
   @GetMapping("/api/movies/{movieId}/comments")
   public List<Comment> findCommentForMovie(
-      @PathVariable("movieId") Integer mid) {
+      @PathVariable("movieId") String mid) {
     return commentService.findCommentForMovie(mid);
   }
 
   @PostMapping("/api/movies/{movieId}/comments")
   public Comment createComment(
-      @PathVariable("movieId") Integer mid,
+      @PathVariable("movieId") String mid,
       @RequestBody Comment newComment) {
     newComment.setMovie(mid);
     commentService.createComment(newComment);

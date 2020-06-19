@@ -10,6 +10,11 @@ public class CommentService {
 
   List<Comment> comments = new ArrayList<Comment>();
 
+  {
+    comments.add(new Comment("comment1",-1,-1,"tt0103776"));
+    comments.add(new Comment("comment2",-1,-1,"tt0103776"));
+    comments.add(new Comment("comment3",-1,-1,"tt0103776"));
+  }
 
   public List<Comment> findCommentForComment(Integer cid) {
     List<Comment> ans = new ArrayList<Comment>();
@@ -21,7 +26,7 @@ public class CommentService {
     return ans;
   }
 
-  public List<Comment> findCommentForMovie(Integer mid) {
+  public List<Comment> findCommentForMovie(String mid) {
     List<Comment> ans = new ArrayList<Comment>();
     for (Comment c : comments) {
       if (c.getMovie() == mid) {
@@ -32,6 +37,7 @@ public class CommentService {
   }
 
   public Comment createComment(Comment newComment) {
+    newComment.setId(this.comments.size());
     this.comments.add(newComment);
     return newComment;
   }

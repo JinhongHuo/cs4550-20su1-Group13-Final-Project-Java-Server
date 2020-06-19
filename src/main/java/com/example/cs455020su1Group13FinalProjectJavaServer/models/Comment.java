@@ -6,7 +6,7 @@ public class Comment {
   private String text;
   private Integer time;
   private Integer commentFor;
-  private Integer Movie;
+  private String Movie;
 
   public Integer getId() {
     return id;
@@ -40,16 +40,15 @@ public class Comment {
     this.commentFor = commentFor;
   }
 
-  public Integer getMovie() {
+  public String getMovie() {
     return Movie;
   }
 
-  public void setMovie(Integer movie) {
+  public void setMovie(String movie) {
     Movie = movie;
   }
 
-  public Comment(Integer id, String text, Integer time, Integer commentFor, Integer movie) {
-    this.id = id;
+  public Comment(String text, Integer time, Integer commentFor, String movie) {
     this.text = text;
     this.time = time;
     this.commentFor = commentFor;
