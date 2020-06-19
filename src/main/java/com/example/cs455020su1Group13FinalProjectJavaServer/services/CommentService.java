@@ -10,12 +10,6 @@ public class CommentService {
 
   List<Comment> comments = new ArrayList<Comment>();
 
-  {
-    comments.add(new Comment("comment1", -1, -1, "tt0372784"));
-    comments.add(new Comment("comment2", -1, -1, "tt0372784"));
-    comments.add(new Comment("comment3", -1, -1, "tt0372784"));
-  }
-
   public List<Comment> findCommentForComment(Integer cid) {
     List<Comment> ans = new ArrayList<Comment>();
     for (Comment c : comments) {

@@ -7,6 +7,7 @@ public class Comment {
   private Integer time;
   private Integer commentFor;
   private String movie;
+  private Integer postedBy;
 
   public Integer getId() {
     return id;
@@ -53,5 +54,13 @@ public class Comment {
     this.time = time;
     this.commentFor = commentFor;
     this.movie = movie;
+  }
+
+  public Integer getPostedBy() {
+    return postedBy;
+  }
+
+  public void setPostedBy(Integer postedBy) {
+    this.postedBy = postedBy;
   }
 }
