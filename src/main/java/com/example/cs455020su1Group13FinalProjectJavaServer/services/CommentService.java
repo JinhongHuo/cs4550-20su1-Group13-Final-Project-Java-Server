@@ -11,15 +11,15 @@ public class CommentService {
   List<Comment> comments = new ArrayList<Comment>();
 
   {
-    comments.add(new Comment("comment1",-1,-1,"tt0103776"));
-    comments.add(new Comment("comment2",-1,-1,"tt0103776"));
-    comments.add(new Comment("comment3",-1,-1,"tt0103776"));
+    comments.add(new Comment("comment1", -1, -1, "tt0372784"));
+    comments.add(new Comment("comment2", -1, -1, "tt0372784"));
+    comments.add(new Comment("comment3", -1, -1, "tt0372784"));
   }
 
   public List<Comment> findCommentForComment(Integer cid) {
     List<Comment> ans = new ArrayList<Comment>();
     for (Comment c : comments) {
-      if (c.getCommentFor() == cid) {
+      if (c.getCommentFor().equals(cid)) {
         ans.add(c);
       }
     }
@@ -29,7 +29,7 @@ public class CommentService {
   public List<Comment> findCommentForMovie(String mid) {
     List<Comment> ans = new ArrayList<Comment>();
     for (Comment c : comments) {
-      if (c.getMovie() == mid) {
+      if (c.getMovie().equals(mid)) {
         ans.add(c);
       }
     }
