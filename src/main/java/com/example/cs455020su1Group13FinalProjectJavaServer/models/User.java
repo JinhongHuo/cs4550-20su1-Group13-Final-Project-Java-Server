@@ -1,10 +1,6 @@
 package com.example.cs455020su1Group13FinalProjectJavaServer.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="users")
@@ -16,6 +12,7 @@ public class User {
     private String password;
     private String email;
     private String phone;
+    private String dob;
     private String role;
 
 
@@ -65,5 +62,13 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
     }
 }

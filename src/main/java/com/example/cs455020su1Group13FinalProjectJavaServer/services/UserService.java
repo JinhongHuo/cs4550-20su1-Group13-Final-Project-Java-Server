@@ -11,6 +11,17 @@ public class UserService {
   @Autowired
   UserRepository repository;
 
+  public User updateUser(User updatedUser) {
+    User user = repository.findUserById(updatedUser.getId());
+    user.setPassword(updatedUser.getPassword());
+    user.setEmail(updatedUser.getEmail());
+    user.setPhone(updatedUser.getPhone());
+    user.setDob(updatedUser.getDob());
+    user.setRole(updatedUser.getRole());
+    repository.save(user);
+    return user;
+  }
+
   public User createUser(User user) {
     return repository.save(user);
   }
