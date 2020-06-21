@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 
 @RestController
 @CrossOrigin(
-    origins = "http://localhost:3000",
+    origins = "*",
     allowCredentials = "true")
 public class UserController {
 
