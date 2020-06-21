@@ -8,6 +8,7 @@ public class Comment {
   private Integer commentFor;
   private String movie;
   private Integer postedBy;
+  private String username;
 
   public Integer getId() {
     return id;
@@ -62,5 +63,13 @@ public class Comment {
 
   public void setPostedBy(Integer postedBy) {
     this.postedBy = postedBy;
+  }
+
+  public String getUsername() {
+    return username;
+  }
+
+  public void setUsername(String username) {
+    this.username = username;
   }
 }
